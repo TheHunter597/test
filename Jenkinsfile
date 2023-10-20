@@ -11,7 +11,7 @@ pipline{
         stage("Build"){
             steps{
                 script{
-                    docker build -t myimage .
+                   sh "docker build -t myimage ."
                 }
             }
         }
