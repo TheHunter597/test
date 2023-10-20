@@ -3,17 +3,23 @@ pipline{
     stages {
         stage("test"){
             steps{
-                echo "Testing the project"
+                script{
+                    echo "testing"
+                }
             }
         }
         stage("Build"){
             steps{
-                docker build -t myimage .
+                script{
+                    docker build -t myimage .
+                }
             }
         }
         stage("deploy"){
             steps{
-                echo "deploying"
+                script{
+                    echo "deploying"
+                }
             }
         }
     }
