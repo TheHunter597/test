@@ -12,7 +12,8 @@ pipeline{
         stage("Build"){
             steps{
                 script{
-                   sh "docker build -t myimage ."
+                   sh "docker build -t test-mango:1.0.0 ."
+                   sh "kubectl apply -f deployment.yaml"
                 }
             }
         }
