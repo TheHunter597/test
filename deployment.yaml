@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: test
-        image: test-mango:1.0.0
+        image: thehunter597/test-mango:1.0.0
         ports:
         - containerPort: 3000
 ---
